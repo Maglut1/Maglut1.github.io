@@ -3,7 +3,7 @@
 }
   
 body {
-  max-width: 1440px;
+  
   margin: auto;
 }
   
@@ -11,6 +11,7 @@ body {
   margin: 1rem;
   position: relative;
   overflow: hidden;
+  max-width: 75%;
   
 }
   
@@ -24,6 +25,7 @@ body {
   margin: 0;
   padding: 0;
   scroll-snap-type: x mandatory;
+  
 }
   
 .slide-arrow {
