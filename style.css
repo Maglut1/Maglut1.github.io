@@ -3,10 +3,13 @@
 }
   
 body {
-  
   margin: auto;
+
 }
   
+.slide-placer{
+  
+}
 .slider-wrapper {
   margin: 1rem;
   position: relative;
