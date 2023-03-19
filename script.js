@@ -1,34 +1,45 @@
-const coords = {x: 0, y: 0};
+//Flying balls 
+
+
+const coords = { x: 0, y: 0 };
 const circles = document.querySelectorAll(".circle");
+;
 
-circles.forEach(function (circle, index){
-    circle.x = 0;
-    circle.y = 0;
-
-    // Set a delay for updating the position and size of circles
-    setTimeout(function() {
-        circle.style.left = coords.x + "px";
-        circle.style.top = coords.y + "px";
-        circle.style.width = (24 - index * 10) + "px";
-        circle.style.height = (24 - index * 10) + "px";
-    }, index * 500); // Delay time is increased by 500ms for each circle
-});
+circles.forEach(function (circle, index) {
+  circle.x = 0;
+  circle.y = 0;
+  });
 
 window.addEventListener("mousemove", function(e){
-    coords.x = e.clientX;
-    coords.y = e.clientY;
-
-    // Update position of the first circle immediately
-    circles[0].style.left = coords.x + "px";
-    circles[0].style.top = coords.y + "px";
-
-    // Set a delay for updating the position of the other circles
-    circles.forEach(function (circle, index){
-        if (index > 0) {
-            setTimeout(function() {
-                circle.style.left = coords.x + "px";
-                circle.style.top = coords.y + "px";
-            }, index * 50); // Delay time is increased by 50ms for each circle
-        }
-    });
+  coords.x = e.clientX;
+  coords.y = e.clientY;
+  
 });
+
+function animateCircles() {
+  
+  let x = coords.x;
+  let y = coords.y;
+  
+  circles.forEach(function (circle, index) {
+    circle.style.left = x - 12 + "px";
+    circle.style.top = y - 12 + "px";
+    
+    circle.style.scale = (circles.length - index) / circles.length;
+    
+    circle.x = x;
+    circle.y = y;
+
+    const nextCircle = circles[index + 1] || circles[0];
+    x += (nextCircle.x - x) * 0.3;
+    y += (nextCircle.y - y) * 0.3;
+  });
+ 
+  requestAnimationFrame(animateCircles);
+}
+
+animateCircles();
+
+// inspo fra denne video: https://www.youtube.com/watch?v=7eE8xPyXSR4&list
+
+
