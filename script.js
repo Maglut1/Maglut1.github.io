@@ -44,3 +44,27 @@ animateCircles();
 
 
 // Nav stuff
+// Hidden nav stuff
+const menuBtn = document.querySelector('.menu-btn');
+const nav = document.querySelector('.nav');
+
+menuBtn.addEventListener('click', function() {
+  nav.classList.toggle('show-nav');
+});
+
+
+// Nav effekts 
+const navItems = document.querySelectorAll('.nav__listItem');
+
+navItems.forEach(item => {
+  item.addEventListener('mouseover', function() {
+    navItems.forEach(item => item.classList.add('inactive'));
+    this.classList.remove('inactive');
+    this.classList.add('active');
+  });
+  
+  item.addEventListener('mouseout', function() {
+    navItems.forEach(item => item.classList.remove('inactive'));
+    this.classList.remove('active');
+  });
+});

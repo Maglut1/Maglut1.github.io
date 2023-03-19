@@ -25,14 +25,35 @@ justify-content: space-around;
   display: flex;
   height: 100vh;
   width: 100vw;
+  display: none;
 }
+
+.show-nav{
+  display: block;
+
+}
+
 .nav__list{
   margin-left: 4rem;
   position: relative;
   z-index: 2;
+  list-style: none;
 }
-.nav__listItem{
 
+.nav__listItem {
+  opacity: 1;
+}
+
+.nav__listItem:hover {
+  opacity: 1;
+}
+
+.nav__listItem.active {
+  opacity: 1;
+}
+
+.nav__listItem.inactive {
+  opacity: 0.5;
 }
 
 .infoBoks{
