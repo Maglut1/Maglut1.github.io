@@ -43,3 +43,4 @@ animateCircles();
 // inspo fra denne video: https://www.youtube.com/watch?v=7eE8xPyXSR4&list
 
 
+// Nav stuff
