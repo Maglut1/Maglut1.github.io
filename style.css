@@ -1,59 +1,67 @@
-body{
+body {
   background-color: #EBEBEB;
   margin: 0;
+}
+
+.header {
+  border-bottom: #ebebeb7b solid 2px;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #EBEBEB;
   
-
 }
 
-.header{
-border-bottom: #ebebeb7b solid 2px;
-display: flex;
-justify-content: space-around;
-}
-
-.header__name{
+.header__name {
   color: #3f3f3f;
   font-size: 1.5rem;
 }
 
-.header__tag{
+.header__tag {
   color: #3f3f3f;
   font-size: 1.5rem;
 }
 
-.nav{
+.menu-btn{
+  z-index: 999;
+}
+.nav {
   align-items: center;
   display: flex;
   height: 100vh;
   width: 100vw;
   display: none;
-  background-color: rgb(63, 63, 63, 0.5) ;
+  position: fixed;
+  background-color: rgb(63, 63, 63, 0.5);
+  padding-top: 80px;
+  z-index: 999;
 }
 
-.show-nav{
+.show-nav {
   display: block;
-
 }
 
-.nav__list{
+.nav__list {
   margin-left: 4rem;
   position: relative;
   z-index: 2;
   list-style: none;
-  
-  
 }
 
 .nav__listItem {
-  text-decoration: none;
-  color: #EBEBEB;
   opacity: 1;
   cursor: pointer;
   display: block;
-  padding: clamp(0.25rem, 0.5vw , 1rem);
+  font-size: 2rem;
+  padding: clamp(0.25rem, 0.5vw, 1rem);
   transition: opacity 400ms ease;
-  
-  
+}
+.nav__listItem-text{
+  text-decoration: none;
+  color: #EBEBEB;
 }
 
 .nav__listItem:hover {
@@ -71,20 +79,18 @@ justify-content: space-around;
   transition: opacity 400ms ease;
 }
 
-.infoBoks{
-
+.infoBoks {
 }
 
-.infoBoks__img{
- width: 96%;
- margin: 0 3rem 0 3rem
+.infoBoks__img {
+  width: 96%;
+  margin: 0 3rem 0 3rem;
 }
 
-.infoBoks__text{
-
+.infoBoks__text {
 }
 
-.circle{
+.circle {
   height: 24px;
   width: 24px;
   border-radius: 24px;

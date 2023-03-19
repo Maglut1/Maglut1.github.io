@@ -52,6 +52,17 @@ menuBtn.addEventListener('click', function() {
   nav.classList.toggle('show-nav');
 });
 
+document.addEventListener('click', function(event) {
+    const isNavOpen = nav.classList.contains('show-nav');
+    const isClickInsideNav = nav.contains(event.target);
+    const isClickInsideMenuBtn = menuBtn.contains(event.target);
+  
+    if (isNavOpen && !isClickInsideNav && !isClickInsideMenuBtn) {
+      nav.classList.remove('show-nav');
+    }
+  });
+  
+
 
 // Nav effekts 
 const navItems = document.querySelectorAll('.nav__listItem');
