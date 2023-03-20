@@ -20,13 +20,11 @@ body {
   font-size: 1.5rem;
 }
 
-.header__tag {
-  color: #3f3f3f;
-  font-size: 1.5rem;
-}
-
 .menu-btn{
   z-index: 999;
+  border: none;
+  background-color: #EBEBEB;
+  pointer-events: visibleFill;
 }
 .nav {
   align-items: center;
@@ -87,9 +85,18 @@ body {
   margin: 0 3rem 0 3rem;
 }
 
-.infoBoks__text {
+.footer{
+  width: 100%;
+  border-top: #3f3f3f 1px solid;
+  display: flex;
+  justify-content: space-evenly;
 }
 
+.footer__icon{
+  padding: 1rem;
+  color: #3f3f3f;
+
+}
 .circle {
   height: 24px;
   width: 24px;
