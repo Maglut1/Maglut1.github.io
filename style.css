@@ -26,19 +26,19 @@ body {
   top: 0;
   width: 100%;
   z-index: 999;
-  background-color: #EBEBEB;
+  background-color: var(--mainColor);
   
 }
 
 .header__name {
-  color: #3f3f3f;
+  color: var(--secondColor);
   font-size: 1.5rem;
 }
 
 .menu-btn{
   z-index: 999;
   border: none;
-  background-color: #EBEBEB;
+  background-color: var(--mainColor);
   pointer-events: visibleFill;
 }
 .nav {
@@ -74,7 +74,7 @@ body {
 }
 .nav__listItem-text{
   text-decoration: none;
-  color: #EBEBEB;
+  color: var(--mainColor);
 }
 
 .nav__listItem:hover {
@@ -102,21 +102,21 @@ body {
 
 .footer{
   width: 100%;
-  border-top: #3f3f3f 1px solid;
+  border-top: var(--secondColor) 1px solid ;
   display: flex;
   justify-content: space-evenly;
 }
 
 .footer__icon{
   padding: 1rem;
-  color: #3f3f3f;
+  color: var(--secondColor);
 
 }
 .circle {
   height: 24px;
   width: 24px;
   border-radius: 24px;
-  background-color: #3f3f3f;
+  background-color: var(--secondColor);
   position: fixed;
   top: 0;
   left: 0;
