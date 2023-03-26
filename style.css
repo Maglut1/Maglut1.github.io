@@ -9,6 +9,11 @@
   --spacingMedium: 1rem;
   --spacingBig: calc(var(--spacingMedium*1.5));
 
+  /* Padding */
+  --paddingSmall:calc(var(--paddingMedium*0.5)) ;
+  --paddingMedium: 1rem;
+  --paddingBig:calc(var(--paddingMedium*1.5));
+
 }
 
 
@@ -108,7 +113,7 @@ body {
 }
 
 .footer__icon{
-  padding: 1rem;
+  padding: var(--paddingMedium);
   color: var(--secondColor);
 
 }
