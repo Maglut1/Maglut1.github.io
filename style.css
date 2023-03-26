@@ -1,3 +1,18 @@
+/* Custom Porperties */
+:root{
+  /* Color */
+  --mainColor: #ebebeb;
+  --secondColor: #3f3f3f;
+
+  /* Spacing */
+  --spacingSmall: calc(var(--spacingMedium*0.75));
+  --spacingMedium: 1rem;
+  --spacingBig: calc(var(--spacingMedium*1.5));
+
+}
+
+
+
 body {
   background-color: #EBEBEB;
   margin: 0;
