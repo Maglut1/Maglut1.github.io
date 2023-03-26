@@ -97,6 +97,10 @@ body {
   transition: opacity 400ms ease;
 }
 
+.main{
+  
+  margin: 1rem
+}
 .infoBoks {
 }
 
@@ -130,6 +134,10 @@ body {
 }
 
 /* Trends */
+.trends{
+  margin-top: 80px;
+}
+
 .trends__slider {
   display: flex;
   overflow-x: scroll;
@@ -143,13 +151,19 @@ body {
   margin-right: 10px;
   border: 1px solid #ccc;
   text-align: center;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .trends__slider-img {
   max-width: 100%;
 }
 
-.trends__slider-element:focus-within {
+.trends__slider-element.active {
+  opacity: 1;
   border: 2px solid #000;
+}
+
+.trends__slider-element:focus-within {
   outline: none;
 }

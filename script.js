@@ -84,10 +84,11 @@ navItems.forEach(item => {
 
 // Card slider 
 const slider = document.querySelector('.trends__slider');
+const slides = document.querySelectorAll('.trends__slider-element');
 
 slider.addEventListener('click', event => {
-  const card = event.target.closest('.trends__slider-element');
-  if (card) {
-    card.focus();
-  }
+  const activeSlide = document.querySelector('.trends__slider-element.active');
+  const nextSlide = activeSlide.nextElementSibling || slides[0];
+  activeSlide.classList.remove('active');
+  nextSlide.classList.add('active');
 });
