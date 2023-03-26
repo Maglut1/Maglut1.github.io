@@ -79,3 +79,15 @@ navItems.forEach(item => {
     this.classList.remove('active');
   });
 });
+
+
+
+// Card slider 
+const slider = document.querySelector('.trends__slider');
+
+slider.addEventListener('click', event => {
+  const card = event.target.closest('.trends__slider-element');
+  if (card) {
+    card.focus();
+  }
+});

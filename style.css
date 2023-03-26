@@ -128,3 +128,28 @@ body {
   pointer-events: none;
   z-index: 9999999;
 }
+
+/* Trends */
+.trends__slider {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.trends__slider-element {
+  scroll-snap-align: center;
+  flex: 0 0 100%;
+  max-width: 300px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.trends__slider-img {
+  max-width: 100%;
+}
+
+.trends__slider-element:focus-within {
+  border: 2px solid #000;
+  outline: none;
+}
