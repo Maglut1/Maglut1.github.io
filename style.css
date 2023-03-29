@@ -21,6 +21,9 @@
 body {
   background-color: #EBEBEB;
   margin: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+
 }
 
 .header {
@@ -63,7 +66,6 @@ body {
 }
 
 .nav__list {
-  margin-left: 4rem;
   position: relative;
   z-index: 2;
   list-style: none;
@@ -98,23 +100,17 @@ body {
 }
 
 .main{
-  
+  margin-top: 80px;
   margin: 1rem
 }
-/* Indhold på siden*/
-
-.infoBoks {
-  width: 100%;
-  background-image: url(images/headshot.jpg);
-  background-color: var(--mainColor);
-}
-
-
 .footer{
   width: 100%;
   border-top: var(--secondColor) 1px solid ;
   display: flex;
   justify-content: space-evenly;
+  position: fixed;
+  bottom: 0;
+  
 }
 
 .footer__icon{
@@ -133,6 +129,49 @@ body {
   pointer-events: none;
   z-index: 9999999;
 }
+/* Indhold på index*/
+.infoBox{
+  margin-top: 80px;
+  width: 246px;
+  overflow: hidden;
+}
+
+.infoBox .infoBox__text{
+  position: relative;
+  color: var(--secondColor);
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.infoBox .infoBox__text.infoBox__stayText{
+  color: var(--secondColor);
+}
+
+.infoBox__text.moveText:before{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+background-color: var(--mainColor);
+border-left: 2px solid var(--secondColor);
+animation: animate 4s steps(12) infinite;
+
+}
+
+
+
+@keyframes animate{
+  40%, 60%{
+    left: calc(100% + 4px);
+  }
+  100%{
+    left: 0%;
+  }
+}
+
+
 
 /* Trends */
 .trends{

@@ -92,3 +92,29 @@ slider.addEventListener('click', event => {
   activeSlide.classList.remove('active');
   nextSlide.classList.add('active');
 });
+
+
+// Animated text on the front Inspo: https://www.youtube.com/watch?v=nxoHR9lltK0&ab_channel=CodingLab
+
+const texts = document.querySelectorAll(".moveText");
+
+const textLoad = () => {
+  setTimeout(() => {
+    texts.forEach(text => {
+      text.textContent = "UI DESIGNER";
+    });
+  }, 0);
+  setTimeout(() => {
+    texts.forEach(text => {
+      text.textContent = "UX DESIGNER";
+    });
+  }, 3000);
+  setTimeout(() => {
+    texts.forEach(text => {
+      text.textContent = "CONTENT CREATOR";
+    });
+  }, 6000);
+}
+
+textLoad();
+setInterval(textLoad, 9000);
