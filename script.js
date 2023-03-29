@@ -108,13 +108,13 @@ const textLoad = () => {
     text.forEach(text => {
       text.textContent = "UX DESIGNER";
     });
-  }, 3000);
+  }, 4000);
   setTimeout(() => {
     text.forEach(text => {
       text.textContent = "CONTENT CREATOR";
     });
-  }, 6000);
+  }, 8000);
 }
 
 textLoad();
-setInterval(textLoad, 9000);
+setInterval(textLoad, 12000);
