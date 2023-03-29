@@ -16,7 +16,7 @@
 
 }
 
-
+/* Generelt Design*/
 
 body {
   background-color: #EBEBEB;
@@ -101,13 +101,12 @@ body {
   
   margin: 1rem
 }
+/* Indhold på siden*/
+
 .infoBoks {
+  background-image: image();
 }
 
-.infoBoks__img {
-  width: 96%;
-  margin: 0 3rem 0 3rem;
-}
 
 .footer{
   width: 100%;
