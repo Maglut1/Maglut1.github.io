@@ -83,34 +83,34 @@ navItems.forEach(item => {
 
 
 // Card slider 
-const slider = document.querySelector('.trends__slider');
-const slides = document.querySelectorAll('.trends__slider-element');
+//const slider = document.querySelector('.trends__slider');
+//const slides = document.querySelectorAll('.trends__slider-element');
 
-slider.addEventListener('click', event => {
-  const activeSlide = document.querySelector('.trends__slider-element.active');
-  const nextSlide = activeSlide.nextElementSibling || slides[0];
-  activeSlide.classList.remove('active');
-  nextSlide.classList.add('active');
-});
+//slider.addEventListener('click', event => {
+  //const activeSlide = document.querySelector('.trends__slider-element.active');
+  //const nextSlide = activeSlide.nextElementSibling || slides[0];
+  //activeSlide.classList.remove('active');
+  //nextSlide.classList.add('active');
+//});
 
 
 // Animated text on the front Inspo: https://www.youtube.com/watch?v=nxoHR9lltK0&ab_channel=CodingLab
 
-const texts = document.querySelectorAll(".moveText");
+const text = document.querySelectorAll(".moveText");
 
 const textLoad = () => {
   setTimeout(() => {
-    texts.forEach(text => {
+    text.forEach(text => {
       text.textContent = "UI DESIGNER";
     });
   }, 0);
   setTimeout(() => {
-    texts.forEach(text => {
+    text.forEach(text => {
       text.textContent = "UX DESIGNER";
     });
   }, 3000);
   setTimeout(() => {
-    texts.forEach(text => {
+    text.forEach(text => {
       text.textContent = "CONTENT CREATOR";
     });
   }, 6000);
