@@ -104,7 +104,9 @@ body {
 /* Indhold på siden*/
 
 .infoBoks {
-  background-image: image();
+  width: 100%;
+  background-image: url(images/headshot.jpg);
+  background-color: var(--mainColor);
 }
 
 
