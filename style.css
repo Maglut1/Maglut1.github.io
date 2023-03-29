@@ -41,7 +41,10 @@ body {
 
 .header__name {
   color: var(--secondColor);
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.2rem;
 }
 
 .menu-btn{
@@ -49,6 +52,11 @@ body {
   border: none;
   background-color: var(--mainColor);
   pointer-events: visibleFill;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+
 }
 .nav {
   align-items: center;
