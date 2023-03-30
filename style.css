@@ -218,3 +218,8 @@ animation: animate 4s steps(12) infinite;
 .trends__slider-element:focus-within {
   outline: none;
 }
+
+/*Javascript side indhold*/
+.counter{
+  display: flex;
+}
