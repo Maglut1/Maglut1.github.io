@@ -110,7 +110,7 @@ body {
 
 .main{
   margin-top: 80px;
-  margin: 1rem
+  
 }
 .footer{
   width: 100%;
@@ -140,7 +140,7 @@ body {
 }
 /* Indhold på index*/
 .infoBox{
-  margin-top: 80px;
+  margin: 80px 1rem 1rem 1rem;
   width: 246px;
   overflow: hidden;
   
@@ -222,4 +222,6 @@ animation: animate 4s steps(12) infinite;
 /*Javascript side indhold*/
 .counter{
   display: flex;
+  
+  border: 1px solid black;
 }
