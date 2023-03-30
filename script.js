@@ -114,7 +114,12 @@ const textLoad = () => {
       text.textContent = "CONTENT CREATOR";
     });
   }, 8000);
+   setTimeout(() => {
+    text.forEach(text => {
+      text.textContent = "FRONTEND DEVELOPER";
+    });
+  }, 8000);
 }
 
 textLoad();
-setInterval(textLoad, 12000);
+setInterval(textLoad, 16000);

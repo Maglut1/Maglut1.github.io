@@ -56,7 +56,7 @@ body {
   font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: 0.2rem;
-
+  color: var(--secondColor);
 }
 .nav {
   align-items: center;
