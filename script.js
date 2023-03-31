@@ -123,3 +123,28 @@ const textLoad = () => {
 
 textLoad();
 setInterval(textLoad, 16000);
+
+
+// Javascript Sidens indhold
+
+//counter
+let counterNumber = document.querySelector(".counter__number")
+let counterMinus = document.querySelector(".counter__minus")
+let counterPlus = document.querySelector(".counter__plus")
+
+let count = 0;
+
+
+counterPlus.addEventListener("click", ()=>{
+  count++;
+  counterNumber.innerHTML = count;
+});
+
+counterMinus.addEventListener("click", ()=>{
+  count--;
+  counterNumber.innerHTML = count;
+});
+function updateNumber(){
+  counterNumber.innerHTML = count;
+}
+updateNumber();

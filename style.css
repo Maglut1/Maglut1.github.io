@@ -110,6 +110,8 @@ body {
 
 .main{
   margin-top: 80px;
+  margin-left: 2rem;
+  margin-right: 2rem;
   
 }
 .footer{
@@ -140,7 +142,7 @@ body {
 }
 /* Indhold på index*/
 .infoBox{
-  margin: 80px 1rem 1rem 1rem;
+  margin-top: 80px;
   width: 246px;
   overflow: hidden;
   
@@ -222,6 +224,42 @@ animation: animate 4s steps(12) infinite;
 /*Javascript side indhold*/
 .counter{
   display: flex;
+  flex-direction: column-reverse;
+  width: fit-content;
+  align-items: center;
+  border-radius: 1.5rem;
+  padding: 0.5rem;
+  justify-content: center;
   
-  border: 1px solid black;
+  
+}
+
+.counter__arrow{
+  font-size: 2rem;
+}
+.counter__minus{
+  
+  border: none;
+  background-color: #FF3A31;
+ 
+  padding: 1rem;
+  
+  color: var(--mainColor);
+}
+.counter__number{
+  padding: 1rem;
+  margin: 0;
+  font-size: 2rem;
+}
+.counter__plus{
+  border: none;
+  background-color: #4ED964;
+  
+  padding: 1rem;
+ 
+  color: var(--mainColor);
+  
+  
+ 
+  
 }
