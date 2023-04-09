@@ -5,14 +5,14 @@
   --secondColor: #3f3f3f;
 
   /* Spacing */
-  --spacingSmall: calc(var(--spacingMedium*0.75));
+  --spacingSmall: calc(var(--spacingMedium) * 0.75);
   --spacingMedium: 1rem;
-  --spacingBig: calc(var(--spacingMedium*1.5));
+  --spacingBig: calc(var(--spacingMedium * 1.5));
 
   /* Padding */
-  --paddingSmall:calc(var(--paddingMedium*0.5)) ;
+  --paddingSmall:calc(var(--paddingMedium * 0.5)) ;
   --paddingMedium: 1rem;
-  --paddingBig:calc(var(--paddingMedium*1.5));
+  --paddingBig:calc(var(--paddingMedium * 1.5));
 
 }
 
@@ -268,5 +268,17 @@ animation: animate 4s steps(12) infinite;
 
 }
 .quiz-link__button{
-  
+
+}
+
+.quiz__svar{
+display: grid;
+
+}
+.quiz__input{
+  border: #3f3f3f 1px solid;
+  border-radius: 25px;
+  font-size: 1rem;
+  padding: var(--paddingMedium);
+  margin: var(--spacingSmall);
 }

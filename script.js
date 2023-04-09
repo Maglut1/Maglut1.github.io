@@ -154,6 +154,8 @@ updateNumber();
 // Quiz link
 const quizLink = document.querySelector(".quiz-link__button")
 
-function quizLink(){
+function openQuizLink(){
   window.open("https://maglut1.github.io/javascriptQuiz.html")
 }
+
+// Selve quizzen
