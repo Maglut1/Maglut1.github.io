@@ -155,5 +155,5 @@ updateNumber();
 const quizLink = document.querySelector(".quiz-link__button")
 
 function quizLink(){
-  window.open()
+  window.open("https://maglut1.github.io/javascriptQuiz.html")
 }
