@@ -264,10 +264,9 @@ animation: animate 4s steps(12) infinite;
   
 }
 
-
-.quiz{
+.quiz-link{
 
 }
-.quiz__button{
-
+.quiz-link__button{
+  
 }

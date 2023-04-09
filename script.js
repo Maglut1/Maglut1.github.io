@@ -148,3 +148,12 @@ function updateNumber(){
   counterNumber.innerHTML = count;
 }
 updateNumber();
+
+
+
+// Quiz link
+const quizLink = document.querySelector(".quiz-link__button")
+
+function quizLink(){
+  window.open()
+}
