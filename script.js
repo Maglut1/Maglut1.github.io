@@ -118,7 +118,7 @@ const textLoad = () => {
     text.forEach(text => {
       text.textContent = "FRONTEND DEVELOPER";
     });
-  }, 8000);
+  }, 12000);
 }
 
 textLoad();
